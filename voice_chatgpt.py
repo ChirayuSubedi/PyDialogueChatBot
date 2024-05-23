@@ -43,7 +43,7 @@ def record_audio(filename="input.wav", duration=5):
 
     print("Finished recording.")
 
-    # Save the recorded data as a WAV file
+    # Save the reecorded data as a WAV file
     with wave.open(filename, 'wb') as wf:
         wf.setnchannels(channels)
         wf.setsampwidth(p.get_sample_size(sample_format))
